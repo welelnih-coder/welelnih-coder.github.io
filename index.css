@@ -1,0 +1,7 @@
+@tailwind base; @tailwind components; @tailwind utilities;
+body { @apply bg-char text-ivory font-body font-light leading-relaxed; }
+:focus-visible { outline: 2px solid #a9774f; outline-offset: 3px; }
+.btn { @apply inline-block bg-ivory text-char px-6 py-3 text-[15px] font-medium transition-colors hover:bg-copper disabled:opacity-40 disabled:cursor-not-allowed; }
+.btn-o { @apply bg-transparent text-ivory border border-ivory/15 hover:bg-transparent hover:border-copper; }
+.inp { @apply w-full bg-char2 border border-ivory/15 px-4 py-3 text-ivory placeholder:text-mute; }
+@media (prefers-reduced-motion: reduce) { * { transition: none !important; } }
